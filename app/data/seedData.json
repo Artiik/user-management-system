@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "John",
+      "email": "john@gmail.com"
+    },
+    {
+      "name": "Nick",
+      "email": "nick@gmail.com"
+    },
+    {
+      "name": "Pete",
+      "email": "pete@gmail.com"
+    }
+  ],
+  "groups": [
+    {
+      "name": "subscribers"
+    },
+    {
+      "name": "pro-members"
+    }
+  ]
+}
