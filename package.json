@@ -4,7 +4,7 @@
   "description": "An app for managing user accounts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha test/**/*.spec.js --slow 5000 --timeout 10000",
     "start": "node main.js",
     "dev": "nodemon main.js -L"
   },
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Artiik/user-management-system#readme",
   "dependencies": {
+    "async": "^2.4.0",
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
     "dotenv": "^2.0.0",
@@ -28,6 +29,10 @@
     "morgan": "^1.7.0"
   },
   "devDependencies": {
-    "nodemon": "^1.10.2"
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "nodemon": "^1.10.2",
+    "supertest": "^3.0.0"
   }
 }

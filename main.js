@@ -2,15 +2,17 @@ require('dotenv').config();
 
 // bootstrap our app
 
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 
 // require server
 const app = require('./app/server');
 
+//console.log(app.get('db_uri'));
+
 // connect to database
-mongoose.connect(app.get('db_uri'), () => {
-    console.log('Database connected!\n', app.get('db_uri'));
-});
+// mongoose.connect(app.get('db_uri'), () => {
+//     console.log('Database connected!\n', app.get('db_uri'));
+// });
 
 // start server
 app.listen(app.get('port'), function () {

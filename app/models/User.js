@@ -20,7 +20,7 @@ const userSchema = new Schema({
 userSchema.plugin(autoIncrement.plugin, {
     model: 'User',
     field: '_id',
-    startAt: 0,
+    startAt: 1,
     incrementBy: 1
 });
 

@@ -19,7 +19,7 @@ const groupSchema = new Schema({
 groupSchema.plugin(autoIncrement.plugin, {
     model: 'Group',
     field: '_id',
-    startAt: 0,
+    startAt: 1,
     incrementBy: 1
 });
 
